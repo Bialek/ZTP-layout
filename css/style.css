@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 15px;
+}
+
+.btn__arrow {
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  border: none;
+}
+
+.btn__arrow--right {
+  right: 0;
+}
+
+.btn__arrow--left {
+  left: 0;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+}
+
+.header__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 30px);
+  z-index: -9999;
+  margin: 0 -15px;
+}

@@ -1,0 +1,22 @@
+.btn__arrow {
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  border: none;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.btn__arrow:hover {
+  opacity: .8;
+}
+
+.btn__arrow--right {
+  right: 0;
+}
+
+.btn__arrow--left {
+  left: 0;
+}
