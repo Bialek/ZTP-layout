@@ -1,3 +1,5 @@
+@import './variable.scss';
+
 .header {
     position: relative;
     height: 100vh;
@@ -12,7 +14,64 @@
         object-fit: cover;
         object-position: left bottom;
     }
+
     .TopBar {
-        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        &__list {
+            list-style: none;
+            display: flex;
+        }
+        &__item {
+            margin-right: 35px;
+            align-self: center;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        &__link {
+            color: #ffffff;
+            font-size: 0.8em;
+            font-weight: 700;
+            line-height: 9.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all .2s ease-in-out;
+            &:hover {
+                color: $primaryColor;  
+            }
+        }
+        &__icon {
+            vertical-align: sub;
+            margin-top: 3px;
+            margin-right: 5px;
+        }
+        &__form {
+            position: relative;
+        }
+        &__input {
+            width: 188px;
+            height: 33px;
+            background-color: #ffffff;
+            padding: 12px 30px 12px 12px;
+            &::placeholder {
+                color: #333333;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+        &__search {
+            position: absolute;
+            vertical-align: sub;
+            margin-top: 3px;
+            background: none;
+            border: none;
+            top: 0;
+            right: 10px;
+            bottom: 0;
+            margin: auto;
+        }
     }
+
+
 }

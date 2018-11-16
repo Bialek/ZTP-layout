@@ -26,35 +26,63 @@
 
         <div class="TopBar">
             <ul class="TopBar__list">
-                <li class="TopBar__item"><a href="#" class="TopBar_link">gdzie kupić</a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar_link">prezent</a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar_link">jak to działa </a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar_link">dla firm</a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar_link">dostawa</a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar_link">płatność</a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar_link">kontakt</a></li>
+                <li class="TopBar__item"><a href="#" class="TopBar__link">gdzie kupić</a></li>
+                <li class="TopBar__item"><a href="#" class="TopBar__link">prezent</a></li>
+                <li class="TopBar__item"><a href="#" class="TopBar__link">jak to działa </a></li>
+                <li class="TopBar__item"><a href="#" class="TopBar__link">dla firm</a></li>
+                <li class="TopBar__item"><a href="#" class="TopBar__link">dostawa</a></li>
+                <li class="TopBar__item"><a href="#" class="TopBar__link">płatność</a></li>
+                <li class="TopBar__item"><a href="#" class="TopBar__link">kontakt</a></li>
             </ul>
                 
-            <ul>
-                <li>
-                    <a href="#">Ulubione (<span id="favorite_number">0</span>)</a>
+            <ul class="TopBar__list TopBar__list--right">
+                 <li class="TopBar__item">
+                    <a href="#" class="TopBar__link">
+                        Ulubione (
+                            <span id="favorite_number">0</span>
+                        )
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/icon_person.svg" alt="person">
-                    <a href="#">Twoje konto</a>
+                 <li class="TopBar__item">   
+                    <a href="#" class="TopBar__link">
+                        <div>
+                            <img class="TopBar__icon" src="./images/icon_person.svg" alt="person">
+                            twoje konto
+                        </div>
+                    </a>          
                 </li>
-                <li>
-                    <img src="./images/icon_cart.svg" alt="cart">
-                    <a href="#">2 szt. za 254,00 zł</a>
+                <li class="TopBar__item">
+                    <a href="#" class="TopBar__link">
+                        <div>
+                            <img class="TopBar__icon" src="./images/icon_cart.svg" alt="cart">
+                            2 szt. za 254,00 zł
+                        </div>
+                    </a>
                 </li>
-                <li>
-                    <input type="text">
-                    <button type="submit">
-                        <img src="./images/icon_search.svg" alt="search">
-                    </button>  
+                <li class="TopBar__item">
+                    <form class="TopBar__form" action="#" method="post">
+                        <input placeholder="Szukaj..." type="text" class="TopBar__input">
+                        <button type="submit" class="TopBar__search">
+                            <img src="./images/icon_search.svg" alt="search">
+                        </button>  
+                    </form>
                 </li>
             </ul>
         </div>
+        
+        <nav class="menu">
+            <div class="logo">
+                <div class="logo__images">
+                    <img class="logo__img" src="./images/logo1.png" alt="logo1">
+                    <img class="logo__img" src="./images/logo2.png" alt="logo2">
+                </div>
+                <div>
+                    <p class="logo__slogan">podaruj ją komuś</p>
+                    <p class="logo__slogan">lub przeżyj to sam!</p>
+                </div>
+            </div>
+        </nav>
+        
         
     </header>
 
