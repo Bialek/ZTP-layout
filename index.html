@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ZTP Layout</title>
 
-
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/buttons.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/grid.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/header.css" />
@@ -16,11 +16,12 @@
 <body>
     <header class="header">
         <img class="header__background" src="./images/background.jpg" alt="ZTP background">
-        <button class="btn__arrow btn_arrow--left">
+        <img class="header__background" src="./images/background1.jpg" alt="ZTP background">
+        <button class="btn__arrow btn_arrow--left" value="-1">
             <img src="./images/arrow_left.svg" alt="arrow_left">
         </button>
 
-        <button class="btn__arrow btn__arrow--right">
+        <button class="btn__arrow btn__arrow--right" value="1">
             <img src="./images/arrow_right.svg" alt="arrow_right">
         </button>
 
@@ -70,20 +71,101 @@
             </ul>
         </div>
         
-        <nav class="menu">
-            <div class="logo">
-                <div class="logo__images">
-                    <img class="logo__img" src="./images/logo1.png" alt="logo1">
-                    <img class="logo__img" src="./images/logo2.png" alt="logo2">
+        <div class="logo">
+            <a href="/">
+                <img src="./images/logo.png" alt="logo1">
+            </a>
+            <div class="logo__slogan">
+                <p class="logo__text">podaruj ją komuś</p>
+                <p class="logo__text">lub przeżyj to sam!</p>
+            </div>
+        </div>
+
+        <div class="desktopMenu">
+            <nav class="PrimaryMenu">
+                <ul class="PrimaryMenu__list">
+                    <li class="PrimaryMenu__item">
+                        <a href="#" class="PrimaryMenu__link">
+                            prezenty
+                            <img class="PrimaryMenu__icon" src="./images/icon_arrow_down.svg" alt="arrow down">
+                        </a>
+                    </li>
+                    <li class="PrimaryMenu__item">
+                        <a href="#" class="PrimaryMenu__link">
+                                dla kogo? 
+                            <img class="PrimaryMenu__icon" src="./images/icon_arrow_down.svg" alt="arrow down">
+                        </a>
+                    </li>
+                    <li class="PrimaryMenu__item">
+                        <a href="#" class="PrimaryMenu__link">
+                            miasto
+                            <img class="PrimaryMenu__icon" src="./images/icon_arrow_down.svg" alt="arrow down">
+                        </a>
+                    </li>
+                    <li class="PrimaryMenu__item">
+                        <a href="#" class="PrimaryMenu__link">
+                            okazja
+                            <img class="PrimaryMenu__icon" src="./images/icon_arrow_down.svg" alt="arrow down">
+                        </a>
+                    </li>
+                    <li class="PrimaryMenu__item">
+                        <a href="#" class="PrimaryMenu__link">
+                            promocje
+                            <img class="PrimaryMenu__icon" src="./images/icon_arrow_down.svg" alt="arrow down">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="SecondaryMenu">
+                <ul class="SecondaryMenu__list">
+                    <li class="SecondaryMenu__item">
+                        <a href="#" class="SecondaryMenu__link">PREZENTY NA ŚWIĘTA</a>
+                    </li>
+                    <li class="SecondaryMenu__item">
+                        <a href="#" class="SecondaryMenu__link">NOWOŚCI</a>
+                    </li>
+                    <li class="SecondaryMenu__item">
+                            <a href="#" class="SecondaryMenu__link">KARTY PODARUNKOWE</a>
+                        </li>
+                    <li class="SecondaryMenu__item">
+                        <a href="#" class="SecondaryMenu__link">PAKIETY PREZENTOWE</a>
+                    </li>
+                    <li class="SecondaryMenu__item">
+                        <a href="#" class="SecondaryMenu__link">DLA FIRM</a>
+                    </li>
+                    <li class="SecondaryMenu__item">
+                        <a href="#" class="SecondaryMenu__link">blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btn__primary">
+                <img class="btn__icon" src="./images/icon_ticket.svg" alt="icon_ticket">
+                bilet do przygody
+            </a>
+        </div>
+
+        <div class="jumbotron col-md-12">
+            <p class="jumbotron__slogan">znajdź</p>
+            <p class="jumbotron__slogan">najlepszy prezent</p>
+            <div class="jumbotron__selectors">
+                <div class="jumbotron__selector col-md-4">
+                    dla kogo?
+                    <img src="./images/icon_arrow_down_red.svg" alt="arrow down red">
                 </div>
-                <div>
-                    <p class="logo__slogan">podaruj ją komuś</p>
-                    <p class="logo__slogan">lub przeżyj to sam!</p>
+                <div class="jumbotron__selector col-md-4">
+                    W jakim mieście?
+                    <img src="./images/icon_arrow_down_red.svg" alt="arrow down red">
+                </div>
+                <div class="jumbotron__selector col-md-4">
+                    W jakiej cenie?
+                    <img src="./images/icon_arrow_down_red.svg" alt="arrow down red">
                 </div>
             </div>
-        </nav>
-        
-        
+            <button type="submit" class="btn__primary btn__primary--long">szukaj</button>
+        </div>
+    
     </header>
 
     <main>
@@ -93,7 +175,11 @@
     <footer>
 
     </footer>
-
-    <script src="./js/slider.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

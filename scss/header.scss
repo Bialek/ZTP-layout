@@ -13,6 +13,10 @@
         height: 100%;
         object-fit: cover;
         object-position: left bottom;
+        opacity: 0;
+        &:first-child {
+            opacity: 1;
+        }
     }
 
     .TopBar {
@@ -30,7 +34,7 @@
             }
         }
         &__link {
-            color: #ffffff;
+            color: #fff;
             font-size: 0.8em;
             font-weight: 700;
             line-height: 9.5px;
@@ -52,7 +56,7 @@
         &__input {
             width: 188px;
             height: 33px;
-            background-color: #ffffff;
+            background-color: #fff;
             padding: 12px 30px 12px 12px;
             &::placeholder {
                 color: #333333;
@@ -72,6 +76,142 @@
             margin: auto;
         }
     }
+    
+    .logo {
+        margin-left: -15px;
+        padding: 20px 40px;
+        background-color: #fff;
+        display: inline-flex;
+        &__slogan {
+            align-self: center;
+            margin-left: 50px;
+            position: relative;
+            &:before {
+                content: '';
+                width: 1px;
+                height: 200%;
+                background-color: #dbdbdb;
+                position: absolute;
+                left: -24px;
+                top: -50%;
+                z-index: 222;
+            }
+        }
+        &__text {
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 17px;
+            text-transform: uppercase;
+            margin: 0;
+            &:first-child {
+                font-weight: 700;
+            }
+        }
 
+    }
+    .desktopMenu {
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        float: right;
+        align-items: flex-end;
+        .PrimaryMenu {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: -15px;
+            &__list {
+                padding: 25px 0px;
+                list-style: none;
+                display: inline-flex;
+                background-color: $primaryColor;
+                margin: 0;
+            }
+            &__item {
+                padding-left: 35px;
+                cursor: pointer;
+                &:last-child {
+                    padding-right: 25px;
+                }
+            }
+            &__link {
+                color: #fff;
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 9.5px;
+                text-transform: uppercase;
+                text-decoration: none;
+                display: inline-flex;
+            }
+            &__icon {
+                margin-left: 5px;
+            }
+        }
 
+        .SecondaryMenu {
+            @extend .PrimaryMenu ;
+            &__list {
+                list-style: none;
+                display: inline-flex;
+                background-color: #fff;
+                margin: 0;
+                z-index: 99999;
+            }
+            &__item {
+                padding: 15px 10px;
+                transition: all ease-in-out .3s;
+                color: #333333;
+                &:hover {
+                    background-color: $primaryColor;
+                    color: #fff;
+                }
+            }
+            &__link {
+                color: inherit;
+                font-family: Montserrat;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 9.5px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    .jumbotron {
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__slogan {
+            color: #ffffff;
+            font-size: 54px;
+            font-weight: 700;
+            line-height: 50px;
+            margin: 0;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            &:first-child {
+                font-weight: 400;
+            }
+        }
+        &__selectors {
+            display: flex;
+            justify-content: space-between;
+            background-color: $primaryColor;
+            padding: 15px;
+            width: 700px;
+            margin-bottom: 25px;
+        }
+        &__selector {
+            background-color: #fff;
+            color: #333333;
+            font-size: .85em;
+            font-weight: 400;
+            line-height: 17px;
+            padding: 15px;
+            margin: 1px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }

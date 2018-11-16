@@ -1,3 +1,5 @@
+@import './variable.scss';
+
 .btn__arrow {
     position: absolute;
     top: 50%;
@@ -6,6 +8,7 @@
     margin: auto;
     top: 0;
     bottom: 0;
+    z-index: 1;
     cursor: pointer;
     &:hover {
         opacity: .8;
@@ -15,5 +18,31 @@
     }
     &--left {
         left: 0;
+    }
+}
+.btn {
+    &__primary {
+        display: inline-flex;
+        margin-right: -15px;
+        width: max-content;
+        padding: 12px 6px;
+        background-color: $primaryColor;
+        color: #fff;
+        font-family: Montserrat;
+        font-size: .825em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 20px;
+        border: none;
+        cursor: pointer;
+        &--long {
+            padding: 15px 30px;
+            font-weight: 400;
+            font-size: 1em;
+        }
+    }
+    &__icon {
+        margin: 0 5px;
     }
 }

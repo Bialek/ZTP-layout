@@ -6,6 +6,7 @@
   margin: auto;
   top: 0;
   bottom: 0;
+  z-index: 1;
   cursor: pointer;
 }
 
@@ -19,4 +20,35 @@
 
 .btn__arrow--left {
   left: 0;
+}
+
+.btn__primary {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: -15px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 12px 6px;
+  background-color: #e42c35;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: .825em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn__primary--long {
+  padding: 15px 30px;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.btn__icon {
+  margin: 0 5px;
 }
