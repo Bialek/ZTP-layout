@@ -14,7 +14,7 @@
         object-fit: cover;
         object-position: left bottom;
         opacity: 0;
-        &:first-child {
+        &--active {
             opacity: 1;
         }
     }
@@ -22,6 +22,7 @@
     .TopBar {
         display: flex;
         justify-content: space-between;
+        z-index: 1;
         &__list {
             list-style: none;
             display: flex;
@@ -46,9 +47,12 @@
             }
         }
         &__icon {
-            vertical-align: sub;
-            margin-top: 3px;
+            color: $primaryColor;
             margin-right: 5px;
+            &--search {
+                margin: 0;
+                font-size: 1.2em;
+            }
         }
         &__form {
             position: relative;
@@ -120,17 +124,21 @@
             justify-content: flex-end;
             margin-right: -15px;
             &__list {
-                padding: 25px 0px;
                 list-style: none;
                 display: inline-flex;
                 background-color: $primaryColor;
                 margin: 0;
+                text-align: center;
             }
             &__item {
-                padding-left: 35px;
+                position: relative;
+                padding: 25px 20px;
                 cursor: pointer;
                 &:last-child {
                     padding-right: 25px;
+                }
+                &:hover .dropdown {
+                    display: block;
                 }
             }
             &__link {
@@ -140,10 +148,10 @@
                 line-height: 9.5px;
                 text-transform: uppercase;
                 text-decoration: none;
-                display: inline-flex;
+                display: inherit;
             }
             &__icon {
-                margin-left: 5px;
+                font-size: 1.2em;
             }
         }
 
@@ -154,7 +162,7 @@
                 display: inline-flex;
                 background-color: #fff;
                 margin: 0;
-                z-index: 99999;
+                z-index: 100;
             }
             &__item {
                 padding: 15px 10px;
@@ -177,6 +185,20 @@
         }
     }
     
+    .dropdown {     
+        list-style: none;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        width: 100%;
+        top: 33px;
+        background-color: $primaryColor;
+        &--primary {
+            top: 55px;
+        }
+    }
+
     .jumbotron {
         padding-top: 70px;
         display: flex;
@@ -209,9 +231,19 @@
             font-weight: 400;
             line-height: 17px;
             padding: 15px;
-            margin: 1px;
+            margin-right: 1px;
             display: flex;
             justify-content: space-between;
+            position: relative;
+            width: 100%;
+            text-decoration: none;
+            &:hover .dropdown {
+                display: block;
+            }
+        }
+        &__icon {
+            color: $primaryColor;
+            font-size: 1.3em;
         }
     }
 }

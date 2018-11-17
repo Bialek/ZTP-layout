@@ -18,7 +18,7 @@
   opacity: 0;
 }
 
-.header__background:first-child {
+.header__background--active {
   opacity: 1;
 }
 
@@ -29,6 +29,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 1;
 }
 
 .header .TopBar__list {
@@ -66,9 +67,13 @@
 }
 
 .header .TopBar__icon {
-  vertical-align: sub;
-  margin-top: 3px;
+  color: #e42c35;
   margin-right: 5px;
+}
+
+.header .TopBar__icon--search {
+  margin: 0;
+  font-size: 1.2em;
 }
 
 .header .TopBar__form {
@@ -185,22 +190,27 @@
 }
 
 .header .desktopMenu .PrimaryMenu__list {
-  padding: 25px 0px;
   list-style: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   background-color: #e42c35;
   margin: 0;
+  text-align: center;
 }
 
 .header .desktopMenu .PrimaryMenu__item {
-  padding-left: 35px;
+  position: relative;
+  padding: 25px 20px;
   cursor: pointer;
 }
 
 .header .desktopMenu .PrimaryMenu__item:last-child {
   padding-right: 25px;
+}
+
+.header .desktopMenu .PrimaryMenu__item:hover .dropdown {
+  display: block;
 }
 
 .header .desktopMenu .PrimaryMenu__link {
@@ -210,13 +220,11 @@
   line-height: 9.5px;
   text-transform: uppercase;
   text-decoration: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inherit;
 }
 
 .header .desktopMenu .PrimaryMenu__icon {
-  margin-left: 5px;
+  font-size: 1.2em;
 }
 
 .header .desktopMenu .SecondaryMenu__list {
@@ -226,7 +234,7 @@
   display: inline-flex;
   background-color: #fff;
   margin: 0;
-  z-index: 99999;
+  z-index: 100;
 }
 
 .header .desktopMenu .SecondaryMenu__item {
@@ -250,6 +258,21 @@
   line-height: 9.5px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.header .dropdown {
+  list-style: none;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  width: 100%;
+  top: 33px;
+  background-color: #e42c35;
+}
+
+.header .dropdown--primary {
+  top: 55px;
 }
 
 .header .jumbotron {
@@ -300,11 +323,23 @@
   font-weight: 400;
   line-height: 17px;
   padding: 15px;
-  margin: 1px;
+  margin-right: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+}
+
+.header .jumbotron__selector:hover .dropdown {
+  display: block;
+}
+
+.header .jumbotron__icon {
+  color: #e42c35;
+  font-size: 1.3em;
 }

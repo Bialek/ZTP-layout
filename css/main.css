@@ -1,0 +1,38 @@
+.section__title {
+  color: #333333;
+  font-size: 1.95em;
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 35px;
+}
+
+.category {
+  display: -ms-grid;
+  display: grid;
+}
+
+.category__link {
+  position: relative;
+}
+
+.category__text {
+  z-index: 9999;
+  position: absolute;
+  right: 0;
+  bottom: 70px;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 17px;
+  text-transform: uppercase;
+  letter-spacing: -1.6px;
+  background-color: #e42c35;
+  padding: 17px 35px 17px 20px;
+}
+
+.category__img {
+  width: 100%;
+  margin-bottom: 20px;
+}

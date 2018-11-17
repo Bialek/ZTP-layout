@@ -1,0 +1,39 @@
+@import './variable.scss';
+
+.section {
+    &__title {
+        color: #333333;
+        font-size: 1.95em;
+        font-weight: 700;
+        line-height: 17px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 35px;
+    }
+    
+}
+
+.category {
+    display: grid;
+    &__link {
+        position: relative;
+    }
+    &__text {
+        z-index: 9999;
+        position: absolute;
+        right: 0;
+        bottom: 70px;
+        color: #fff;
+        font-size: 2em;
+        font-weight: 400;
+        line-height: 17px;
+        text-transform: uppercase;
+        letter-spacing: -1.6px;
+        background-color: $primaryColor;
+        padding: 17px 35px 17px 20px;
+    }
+    &__img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

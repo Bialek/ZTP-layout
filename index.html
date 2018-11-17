@@ -5,26 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ZTP Layout</title>
-
+    <!-- vendors links -->
+    <script src="https://use.fontawesome.com/72c8a0c2fa.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap-grid.css" />
+    <!-- website links -->
     <link rel="stylesheet" type="text/css" media="screen" href="./css/buttons.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/grid.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/header.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+
     
 </head>
 <body>
     <header class="header">
-        <img class="header__background" src="./images/background.jpg" alt="ZTP background">
+        <!-- slider start  -->
+        <img class="header__background header__background--active" src="./images/background.jpg" alt="ZTP background">
         <img class="header__background" src="./images/background1.jpg" alt="ZTP background">
         <button class="btn__arrow btn_arrow--left" value="-1">
-            <img src="./images/arrow_left.svg" alt="arrow_left">
+            <i class="fa fa-angle-left btn__icon--angle" aria-hidden="true"></i>
         </button>
-
+        
         <button class="btn__arrow btn__arrow--right" value="1">
-            <img src="./images/arrow_right.svg" alt="arrow_right">
+            <i class="fa fa-angle-right btn__icon--angle" aria-hidden="true"></i>
         </button>
-
+        <!-- slider end -->
         <div class="TopBar">
             <ul class="TopBar__list">
                 <li class="TopBar__item"><a href="#" class="TopBar__link">gdzie kupić</a></li>
@@ -47,7 +52,7 @@
                  <li class="TopBar__item">   
                     <a href="#" class="TopBar__link">
                         <div>
-                            <img class="TopBar__icon" src="./images/icon_person.svg" alt="person">
+                            <i class="fa fa-user TopBar__icon" aria-hidden="true"></i>
                             twoje konto
                         </div>
                     </a>          
@@ -55,7 +60,7 @@
                 <li class="TopBar__item">
                     <a href="#" class="TopBar__link">
                         <div>
-                            <img class="TopBar__icon" src="./images/icon_cart.svg" alt="cart">
+                            <i class="fa fa-shopping-cart TopBar__icon" aria-hidden="true"></i>
                             2 szt. za 254,00 zł
                         </div>
                     </a>
@@ -64,7 +69,7 @@
                     <form class="TopBar__form" action="#" method="post">
                         <input placeholder="Szukaj..." type="text" class="TopBar__input">
                         <button type="submit" class="TopBar__search">
-                            <img src="./images/icon_search.svg" alt="search">
+                            <i class="fa fa-search TopBar__icon TopBar__icon--search" aria-hidden="true"></i>
                         </button>  
                     </form>
                 </li>
@@ -87,31 +92,101 @@
                     <li class="PrimaryMenu__item">
                         <a href="#" class="PrimaryMenu__link">
                             prezenty
-                            <img class="PrimaryMenu__icon" src="./images/icon_arrow_down.svg" alt="arrow down">
+                            <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
+                            <ul class="dropdown dropdown--primary">
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                            </ul>
                         </a>
                     </li>
                     <li class="PrimaryMenu__item">
                         <a href="#" class="PrimaryMenu__link">
                                 dla kogo? 
-                            <img class="PrimaryMenu__icon" src="./images/icon_arrow_down.svg" alt="arrow down">
+                            <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
+                            <ul class="dropdown dropdown--primary">
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                            </ul>
                         </a>
                     </li>
                     <li class="PrimaryMenu__item">
                         <a href="#" class="PrimaryMenu__link">
                             miasto
-                            <img class="PrimaryMenu__icon" src="./images/icon_arrow_down.svg" alt="arrow down">
+                            <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
+                            <ul class="dropdown dropdown--primary">
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                            </ul>
                         </a>
                     </li>
                     <li class="PrimaryMenu__item">
                         <a href="#" class="PrimaryMenu__link">
                             okazja
-                            <img class="PrimaryMenu__icon" src="./images/icon_arrow_down.svg" alt="arrow down">
+                            <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
+                            <ul class="dropdown dropdown--primary">
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                            </ul>
                         </a>
                     </li>
                     <li class="PrimaryMenu__item">
                         <a href="#" class="PrimaryMenu__link">
                             promocje
-                            <img class="PrimaryMenu__icon" src="./images/icon_arrow_down.svg" alt="arrow down">
+                            <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
+                            <ul class="dropdown dropdown--primary">
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                                <li class="PrimaryMenu__item">
+                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                </li>
+                            </ul>
                         </a>
                     </li>
                 </ul>
@@ -141,7 +216,7 @@
             </nav>
 
             <a href="#" class="btn__primary">
-                <img class="btn__icon" src="./images/icon_ticket.svg" alt="icon_ticket">
+                <i class="fa fa-tags btn__icon" aria-hidden="true"></i>
                 bilet do przygody
             </a>
         </div>
@@ -152,15 +227,57 @@
             <div class="jumbotron__selectors">
                 <div class="jumbotron__selector col-md-4">
                     dla kogo?
-                    <img src="./images/icon_arrow_down_red.svg" alt="arrow down red">
+                    <i class="fa fa-angle-down jumbotron__icon" aria-hidden="true"></i>
+                    <ul class="dropdown">
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                    </ul>
                 </div>
                 <div class="jumbotron__selector col-md-4">
                     W jakim mieście?
-                    <img src="./images/icon_arrow_down_red.svg" alt="arrow down red">
+                    <i class="fa fa-angle-down jumbotron__icon" aria-hidden="true"></i>
+                    <ul class="dropdown">
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                    </ul>
                 </div>
                 <div class="jumbotron__selector col-md-4">
                     W jakiej cenie?
-                    <img src="./images/icon_arrow_down_red.svg" alt="arrow down red">
+                    <i class="fa fa-angle-down jumbotron__icon" aria-hidden="true"></i>
+                    <ul class="dropdown">
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                        <li>
+                            <a class="jumbotron__selector" href="#">dla kogo?</a>   
+                        </li>
+                    </ul>
                 </div>
             </div>
             <button type="submit" class="btn__primary btn__primary--long">szukaj</button>
@@ -169,7 +286,70 @@
     </header>
 
     <main>
+        <section class="container-fluid section">
+            <h1 class="section__title">Polecamy kategorie</h1>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 category">
+                    <a href="#" class="category__link">
+                        <img class="category__img" src="./images/category_1.jpg" alt="him">
+                        <span class="category__text">Dla niego</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 category">
+                    <a href="#" class="category__link">
+                        <img class="category__img" src="./images/category_2.jpg" alt="her">
+                        <span class="category__text">Dla niej</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 category">
+                    <a href="#" class="category__link">
+                        <img class="category__img" src="./images/category_3.jpg" alt="kids">
+                        <span class="category__text">Dla dzieci</span>
+                    </a>
+                    <a href="#" class="category__link">
+                        <img class="category__img" src="./images/category_4.jpg" alt="beauty">
+                        <span class="category__text">uroda i styl</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 category">
+                    <a href="#" class="category__link">
+                        <img class="category__img" src="./images/category_5.jpg" alt="hobby">
+                        <span class="category__text">hobby</span>
+                    </a>
+                    <a href="#" class="category__link">
+                        <img class="category__img" src="./images/category_6.jpg" alt="adrenalin">
+                        <span class="category__text">adrenalina</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
+        <section class="section bestseller">
+            <h2 class="section__title">bestsellery</h2>
+            <div class="col-lg-2 col-md-4 col-sm-6 bestseller__item">
+                <a href="#">
+                    <img src="./images/bestseller_1.jpg" alt="bestseller">
+                    <div class="layer">
+                        <p>
+                            Czujesz zmęczenie lub znużenie, a może niedosyt adrenaliny? Skok ze spadochronem to przygoda, która postawi Cię na nogi w ciągu kilku sekund. Warszawa w zasięgu wzroku!
+                        </p>
+                        <div>
+                            <i class="fa fa-male" aria-hidden="true"></i>
+                            <i class="fa fa-female" aria-hidden="true"></i>
+                            <i class="fa fa-plane" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="bestseller__info">
+                        <p class="bestseller__name">Kurs jazdy bolidem wyścigowym - I stopień</p>
+                        <p class="bestseller__place">Warszawa</p>
+                        <p class="bestseller__price">3895,00 zł</p>
+                    </div>
+                </a>
+
+
+            </div>
+            
+        </section>
     </main>
 
     <footer>
@@ -180,6 +360,6 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
     </script>
-    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>
