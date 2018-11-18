@@ -1,0 +1,50 @@
+@import './variable.scss';
+@import './extends.scss';
+
+.newsletter {
+    background-color: $primaryColor;
+    margin: 0 -15px;
+    z-index: 1;
+    position: relative;
+    padding: 20px;
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+    [class*="col-md-"] {
+        z-index: 3;
+    }
+    &__header {
+        color: #ffffff;
+        font-size: 1.1em;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+    }
+    &__input {
+        width: 210px;
+        height: 40px;
+        margin: 0 20px 20px 0;
+        padding: 15px;
+        border: none;
+        border: 1px solid $primaryColor;
+    }
+    &__text {
+        color: #ffffff;
+        font-family: "Gotham - Book";
+        font-size: .975em;
+        font-weight: 400;
+        &--bold {
+            display: inline-flex;
+        }
+    }
+    &__link {
+        text-decoration: underline;
+        color: inherit;
+    }
+    &__icon {
+        margin-right: 7px;
+    }
+}

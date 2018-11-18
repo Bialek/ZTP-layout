@@ -64,6 +64,16 @@
   margin: 30px auto 0;
 }
 
+.btn__primary--reverse {
+  font-size: .75em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 2px solid #fff;
+  height: 40px;
+  padding: 0 27px;
+}
+
 .btn__icon {
   margin: 0 5px;
 }

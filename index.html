@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/header.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/footer.css" />
 
     
 </head>
@@ -643,14 +644,47 @@
             <img class="ticket__background" src="./images/ticket_background.jpg" alt="ticket">
             <div class="row">
                 <div class="container">
-                    <img class="ticket__img" src="./images/ticket.jpg" alt="ticket">
+                    <a href="./images/ticket.jpg" target="_blank">
+                        <img class="ticket__img" src="./images/ticket.jpg" alt="ticket">
+                    </a> 
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <div class="newsletter">
+            <img class="newsletter__img" src="./images/airplane.png" alt="airplane">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h5 class="newsletter__header">newsletter</h5>
+                        <form action="#" method="post">
+                            <input class="newsletter__input" placeholder="Twój e-mail" type="email" name="email" id="email">
+                            <input class="newsletter__input" placeholder="Twoje imię" type="text" name="name" id="name">
+                            <button class="btn__primary btn__primary--reverse" type="submit">zapisz się</button>
+                        </form>
+                        <span class="newsletter__text"><a class="newsletter__link" href="#">Kliknij tu</a>, aby się wypisać</span>
+                    </div>
+                    <div class="col-md-5">
+                        <h5 class="newsletter__header">Dlaczego warto zapisać się do naszego newslettera?</h5>
+                        
+                        <p class="newsletter__text newsletter__text--bold">
+                            <i class="fa fa-check newsletter__icon" aria-hidden="true"></i>
+                            Pierwszy dowiesz się o nowościach, konkursach i promocjach.
+                        </p>
+                        <p class="newsletter__text newsletter__text--bold">
+                            <i class="fa fa-check newsletter__icon" aria-hidden="true"></i>
+                            Otrzymasz dostęp do ofert dedykowanych.
+                        </p>   
+                        <p class="newsletter__text newsletter__text--bold">
+                            <i class="fa fa-check newsletter__icon" aria-hidden="true"></i>
+                            Będziesz regularnie otrzymywać kody rabatowe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"

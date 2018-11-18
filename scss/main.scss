@@ -1,4 +1,5 @@
 @import './variable.scss';
+@import './extends.scss';
 
 
 .section {
@@ -228,13 +229,11 @@
     &__text {
         color: #333333;
         line-height: 18px;
-        &:first-letter {
-            text-transform: uppercase;
-        }
+        @extend .firstLetter;
         &--bold {
             font-size: .9em;
             font-weight: 500;
-            margin: 15px 0;
+            margin: 12px 0;
             display: inline-flex;
         }
         &--center {
@@ -246,15 +245,23 @@
         background-color: #fff;
         height: 390px;
         padding: 35px 40px;
+        @media screen and (max-width: 892px){
+            height: auto;
+        }
     }
     &__question {
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid #dbdbdb;
+        transition: all ease-in-out .3s;
+        &:hover {
+            border-color: $primaryColor;
+        }
     }
     &__icon {
         align-self: center;
         color: $primaryColor;
+        font-size: 1.3em;
     }
 }
 
@@ -273,5 +280,6 @@
     }
     &__img {
         width: 100%;
+        padding: 30px 0;
     }
 }
