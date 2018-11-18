@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
 .btn__arrow {
   position: absolute;
   top: 50%;
@@ -35,14 +36,32 @@
   text-transform: uppercase;
   text-decoration: none;
   line-height: 20px;
-  border: none;
+  border: 1px solid #e42c35;
   cursor: pointer;
+  -webkit-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.btn__primary:hover {
+  background-color: #fff;
+  color: #e42c35;
+}
+
+.btn__primary--long, .btn__primary--center {
+  font-family: "Archivo Black";
 }
 
 .btn__primary--long {
   padding: 15px 30px;
   font-weight: 400;
   font-size: 1em;
+}
+
+.btn__primary--center {
+  font-size: .9em;
+  padding: 15px 20px;
+  margin: 30px auto 0;
 }
 
 .btn__icon {

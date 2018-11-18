@@ -10,3 +10,11 @@
 body {
   margin: 0 15px;
 }
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

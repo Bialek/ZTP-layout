@@ -32,12 +32,27 @@
         text-transform: uppercase;
         text-decoration: none;
         line-height: 20px;
-        border: none;
+        border: 1px solid $primaryColor;
         cursor: pointer;
+        transition: all ease-in-out .3s;
+        &:hover {
+            background-color: #fff;
+            color: $primaryColor;
+            
+
+        }
+        &--long, &--center {
+            font-family: $fontBlack;
+        }
         &--long {
             padding: 15px 30px;
             font-weight: 400;
             font-size: 1em;
+        }
+        &--center {
+            font-size: .9em;
+            padding: 15px 20px; 
+            margin: 30px auto 0; 
         }
     }
     &__icon {
