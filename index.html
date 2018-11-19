@@ -31,46 +31,46 @@
             <i class="fa fa-angle-right btn__icon--angle" aria-hidden="true"></i>
         </button>
         <!-- slider end -->
-        <div class="TopBar">
-            <ul class="TopBar__list">
-                <li class="TopBar__item"><a href="#" class="TopBar__link">gdzie kupić</a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar__link">prezent</a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar__link">jak to działa </a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar__link">dla firm</a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar__link">dostawa</a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar__link">płatność</a></li>
-                <li class="TopBar__item"><a href="#" class="TopBar__link">kontakt</a></li>
+        <div class="topBar">
+            <ul class="topBar__list">
+                <li class="topBar__item"><a href="#" class="topBar__link">gdzie kupić</a></li>
+                <li class="topBar__item"><a href="#" class="topBar__link">prezent</a></li>
+                <li class="topBar__item"><a href="#" class="topBar__link">jak to działa </a></li>
+                <li class="topBar__item"><a href="#" class="topBar__link">dla firm</a></li>
+                <li class="topBar__item"><a href="#" class="topBar__link">dostawa</a></li>
+                <li class="topBar__item"><a href="#" class="topBar__link">płatność</a></li>
+                <li class="topBar__item"><a href="#" class="topBar__link">kontakt</a></li>
             </ul>
                 
-            <ul class="TopBar__list TopBar__list--right">
-                 <li class="TopBar__item">
-                    <a href="#" class="TopBar__link">
+            <ul class="topBar__list topBar__list--right">
+                 <li class="topBar__item">
+                    <a href="#" class="topBar__link">
                         Ulubione (
                             <span id="favorite_number">0</span>
                         )
                     </a>
                 </li>
-                 <li class="TopBar__item">   
-                    <a href="#" class="TopBar__link">
+                 <li class="topBar__item">   
+                    <a href="#" class="topBar__link">
                         <div>
-                            <i class="fa fa-user TopBar__icon" aria-hidden="true"></i>
+                            <i class="fa fa-user topBar__icon" aria-hidden="true"></i>
                             twoje konto
                         </div>
                     </a>          
                 </li>
-                <li class="TopBar__item">
-                    <a href="#" class="TopBar__link">
+                <li class="topBar__item">
+                    <a href="#" class="topBar__link">
                         <div>
-                            <i class="fa fa-shopping-cart TopBar__icon" aria-hidden="true"></i>
+                            <i class="fa fa-shopping-cart topBar__icon" aria-hidden="true"></i>
                             2 szt. za 254,00 zł
                         </div>
                     </a>
                 </li>
-                <li class="TopBar__item">
-                    <form class="TopBar__form" action="#" method="post">
-                        <input placeholder="Szukaj..." type="text" class="TopBar__input">
-                        <button type="submit" class="TopBar__search">
-                            <i class="fa fa-search TopBar__icon TopBar__icon--search" aria-hidden="true"></i>
+                <li class="topBar__item">
+                    <form class="topBar__form" action="#" method="post">
+                        <input placeholder="Szukaj..." type="text" class="topBar__input">
+                        <button type="submit" class="topBar__search">
+                            <i class="fa fa-search topBar__icon topBar__icon--search" aria-hidden="true"></i>
                         </button>  
                     </form>
                 </li>
@@ -222,6 +222,12 @@
             </a>
         </div>
 
+        <div class="mobileTopBar">
+            <span id="mobileOpen">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+        </div>
+
         <div class="jumbotron col-md-12">
             <p class="jumbotron__slogan">znajdź</p>
             <p class="jumbotron__slogan">najlepszy prezent</p>
@@ -331,27 +337,29 @@
             <h2 class="section__title">bestsellery</h2>
             <div class="container-fluid">  
                 <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-6 bestseller__item">
-                        <a href="#" class="bestseller__link">
-                            <div class="bestseller__top">
-                                <img class="bestseller__img" src="./images/bestseller_1.jpg" alt="bestseller">
-                                <div class="bestseller__layer">
-                                    <p>
-                                        Czujesz zmęczenie lub znużenie, a może niedosyt adrenaliny? Skok ze spadochronem to przygoda, która postawi Cię na nogi w ciągu kilku sekund. Warszawa w zasięgu wzroku!
-                                    </p>
-                                    <div class="bestseller__icons">
-                                        <i class="fa fa-male" aria-hidden="true"></i>
-                                        <i class="fa fa-female" aria-hidden="true"></i>
-                                        <i class="fa fa-plane bestseller__plane" aria-hidden="true"></i>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="bestseller__item">
+                            <a href="#" class="bestseller__link">
+                                <div class="bestseller__top">
+                                    <img class="bestseller__img" src="./images/bestseller_1.jpg" alt="bestseller">
+                                    <div class="bestseller__layer">
+                                        <p>
+                                            Czujesz zmęczenie lub znużenie, a może niedosyt adrenaliny? Skok ze spadochronem to przygoda, która postawi Cię na nogi w ciągu kilku sekund. Warszawa w zasięgu wzroku!
+                                        </p>
+                                        <div class="bestseller__icons">
+                                            <i class="fa fa-male" aria-hidden="true"></i>
+                                            <i class="fa fa-female" aria-hidden="true"></i>
+                                            <i class="fa fa-plane bestseller__plane" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="bestseller__info">
-                                <p class="bestseller__name">Kurs jazdy bolidem wyścigowym - I stopień</p>
-                                <p class="bestseller__place">Warszawa</p>
-                                <p class="bestseller__price">3895,00 zł</p>
-                            </div>
-                        </a>
+                                <div class="bestseller__info">
+                                    <p class="bestseller__name">Kurs jazdy bolidem wyścigowym - I stopień</p>
+                                    <p class="bestseller__place">Warszawa</p>
+                                    <p class="bestseller__price">3895,00 zł</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-6 bestseller__item">
                         <a href="#" class="bestseller__link">
@@ -375,93 +383,101 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 bestseller__item">
-                        <a href="#" class="bestseller__link">
-                            <div class="bestseller__top">
-                                <img class="bestseller__img" src="./images/bestseller_3.jpg" alt="bestseller">
-                                <div class="bestseller__layer">
-                                    <p>
-                                        Czujesz zmęczenie lub znużenie, a może niedosyt adrenaliny? Skok ze spadochronem to przygoda, która postawi Cię na nogi w ciągu kilku sekund. Warszawa w zasięgu wzroku!
-                                    </p>
-                                    <div class="bestseller__icons">
-                                        <i class="fa fa-male" aria-hidden="true"></i>
-                                        <i class="fa fa-female" aria-hidden="true"></i>
-                                        <i class="fa fa-plane bestseller__plane" aria-hidden="true"></i>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="bestseller__item">
+                            <a href="#" class="bestseller__link">
+                                <div class="bestseller__top">
+                                    <img class="bestseller__img" src="./images/bestseller_3.jpg" alt="bestseller">
+                                    <div class="bestseller__layer">
+                                        <p>
+                                            Czujesz zmęczenie lub znużenie, a może niedosyt adrenaliny? Skok ze spadochronem to przygoda, która postawi Cię na nogi w ciągu kilku sekund. Warszawa w zasięgu wzroku!
+                                        </p>
+                                        <div class="bestseller__icons">
+                                            <i class="fa fa-male" aria-hidden="true"></i>
+                                            <i class="fa fa-female" aria-hidden="true"></i>
+                                            <i class="fa fa-plane bestseller__plane" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="bestseller__info">
-                                <p class="bestseller__name">Aconcagua 6959 m.n.p.m.</p>
-                                <p class="bestseller__place">Argentyna, Ameryka Południowa</p>
-                                <p class="bestseller__price">11000,00 zł</p>
-                            </div>
-                        </a>
+                                <div class="bestseller__info">
+                                    <p class="bestseller__name">Aconcagua 6959 m.n.p.m.</p>
+                                    <p class="bestseller__place">Argentyna, Ameryka Południowa</p>
+                                    <p class="bestseller__price">11000,00 zł</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 bestseller__item">
-                        <a href="#" class="bestseller__link">
-                            <div class="bestseller__top">
-                                <img class="bestseller__img" src="./images/bestseller_2.jpg" alt="bestseller">
-                                <div class="bestseller__layer">
-                                    <p>
-                                        Czujesz zmęczenie lub znużenie, a może niedosyt adrenaliny? Skok ze spadochronem to przygoda, która postawi Cię na nogi w ciągu kilku sekund. Warszawa w zasięgu wzroku!
-                                    </p>
-                                    <div class="bestseller__icons">
-                                        <i class="fa fa-male" aria-hidden="true"></i>
-                                        <i class="fa fa-female" aria-hidden="true"></i>
-                                        <i class="fa fa-plane bestseller__plane" aria-hidden="true"></i>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="bestseller__item">
+                            <a href="#" class="bestseller__link">
+                                <div class="bestseller__top">
+                                    <img class="bestseller__img" src="./images/bestseller_2.jpg" alt="bestseller">
+                                    <div class="bestseller__layer">
+                                        <p>
+                                            Czujesz zmęczenie lub znużenie, a może niedosyt adrenaliny? Skok ze spadochronem to przygoda, która postawi Cię na nogi w ciągu kilku sekund. Warszawa w zasięgu wzroku!
+                                        </p>
+                                        <div class="bestseller__icons">
+                                            <i class="fa fa-male" aria-hidden="true"></i>
+                                            <i class="fa fa-female" aria-hidden="true"></i>
+                                            <i class="fa fa-plane bestseller__plane" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="bestseller__info">
-                                <p class="bestseller__name">Skok ze spadochronem w  Tandemie dla dwojga</p>
-                                <p class="bestseller__place">Warszawa</p>
-                                <p class="bestseller__price">1459,00 zł</p>
-                            </div>
-                        </a>
+                                <div class="bestseller__info">
+                                    <p class="bestseller__name">Skok ze spadochronem w  Tandemie dla dwojga</p>
+                                    <p class="bestseller__place">Warszawa</p>
+                                    <p class="bestseller__price">1459,00 zł</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 bestseller__item">
-                        <a href="#" class="bestseller__link">
-                            <div class="bestseller__top">
-                                <img class="bestseller__img" src="./images/bestseller_1.jpg" alt="bestseller">
-                                <div class="bestseller__layer">
-                                    <p>
-                                        Czujesz zmęczenie lub znużenie, a może niedosyt adrenaliny? Skok ze spadochronem to przygoda, która postawi Cię na nogi w ciągu kilku sekund. Warszawa w zasięgu wzroku!
-                                    </p>
-                                    <div class="bestseller__icons">
-                                        <i class="fa fa-male" aria-hidden="true"></i>
-                                        <i class="fa fa-female" aria-hidden="true"></i>
-                                        <i class="fa fa-plane bestseller__plane" aria-hidden="true"></i>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="bestseller__item">
+                            <a href="#" class="bestseller__link">
+                                <div class="bestseller__top">
+                                    <img class="bestseller__img" src="./images/bestseller_1.jpg" alt="bestseller">
+                                    <div class="bestseller__layer">
+                                        <p>
+                                            Czujesz zmęczenie lub znużenie, a może niedosyt adrenaliny? Skok ze spadochronem to przygoda, która postawi Cię na nogi w ciągu kilku sekund. Warszawa w zasięgu wzroku!
+                                        </p>
+                                        <div class="bestseller__icons">
+                                            <i class="fa fa-male" aria-hidden="true"></i>
+                                            <i class="fa fa-female" aria-hidden="true"></i>
+                                            <i class="fa fa-plane bestseller__plane" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="bestseller__info">
-                                <p class="bestseller__name">Kurs jazdy bolidem wyścigowym - I stopień</p>
-                                <p class="bestseller__place">Warszawa</p>
-                                <p class="bestseller__price">3895,00 zł</p>
-                            </div>
-                        </a>
+                                <div class="bestseller__info">
+                                    <p class="bestseller__name">Kurs jazdy bolidem wyścigowym - I stopień</p>
+                                    <p class="bestseller__place">Warszawa</p>
+                                    <p class="bestseller__price">3895,00 zł</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 bestseller__item">
-                        <a href="#">
-                            <div class="bestseller__top">
-                                <img class="bestseller__img" src="./images/bestseller_3.jpg" alt="bestseller">
-                                <div class="bestseller__layer">
-                                    <p>
-                                        Czujesz zmęczenie lub znużenie, a może niedosyt adrenaliny? Skok ze spadochronem to przygoda, która postawi Cię na nogi w ciągu kilku sekund. Warszawa w zasięgu wzroku!
-                                    </p>
-                                    <div class="bestseller__icons">
-                                        <i class="fa fa-male" aria-hidden="true"></i>
-                                        <i class="fa fa-female" aria-hidden="true"></i>
-                                        <i class="fa fa-plane bestseller__plane" aria-hidden="true"></i>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="bestseller__item">
+                            <a href="#">
+                                <div class="bestseller__top">
+                                    <img class="bestseller__img" src="./images/bestseller_3.jpg" alt="bestseller">
+                                    <div class="bestseller__layer">
+                                        <p>
+                                            Czujesz zmęczenie lub znużenie, a może niedosyt adrenaliny? Skok ze spadochronem to przygoda, która postawi Cię na nogi w ciągu kilku sekund. Warszawa w zasięgu wzroku!
+                                        </p>
+                                        <div class="bestseller__icons">
+                                            <i class="fa fa-male" aria-hidden="true"></i>
+                                            <i class="fa fa-female" aria-hidden="true"></i>
+                                            <i class="fa fa-plane bestseller__plane" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="bestseller__info">
-                                <p class="bestseller__name">Aconcagua 6959 m.n.p.m.</p>
-                                <p class="bestseller__place">Argentyna, Ameryka Południowa</p>
-                                <p class="bestseller__price">11000,00 zł</p>
-                            </div>
-                        </a>
+                                <div class="bestseller__info">
+                                    <p class="bestseller__name">Aconcagua 6959 m.n.p.m.</p>
+                                    <p class="bestseller__place">Argentyna, Ameryka Południowa</p>
+                                    <p class="bestseller__price">11000,00 zł</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -471,65 +487,73 @@
             <h3 class="section__title">blog</h3>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 blog__item">
-                        <a href="#">
-                            <div class="blog__imgDiv">
-                                <img class="blog__img" src="./images/blog_1.jpg" alt="blog">
-                                <div class="blog__imgInfo">
-                                    <span class="blog__imgText">12.03</span>
-                                    <span class="blog__imgText">2016</span>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="blog__item">
+                            <a href="#">
+                                <div class="blog__imgDiv">
+                                    <img class="blog__img" src="./images/blog_1.jpg" alt="blog">
+                                    <div class="blog__imgInfo">
+                                        <span class="blog__imgText">12.03</span>
+                                        <span class="blog__imgText">2016</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="blog__info">
-                                <p class="blog__text">Sprawdź koniecznie nasze nowe Przygody! Idealne na świąteczne prezenty</p>
-                                <p class="blog__link">czytaj dalej</p>
-                            </div>
-                        </a>
+                                <div class="blog__info">
+                                    <p class="blog__text">Sprawdź koniecznie nasze nowe Przygody! Idealne na świąteczne prezenty</p>
+                                    <p class="blog__link">czytaj dalej</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 blog__item">
-                        <a href="#">
-                            <div class="blog__imgDiv">
-                                <img class="blog__img" src="./images/blog_2.jpg" alt="blog">
-                                <div class="blog__imgInfo">
-                                    <span class="blog__imgText">08.03</span>
-                                    <span class="blog__imgText">2016</span>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="blog__item">
+                            <a href="#">
+                                <div class="blog__imgDiv">
+                                    <img class="blog__img" src="./images/blog_2.jpg" alt="blog">
+                                    <div class="blog__imgInfo">
+                                        <span class="blog__imgText">08.03</span>
+                                        <span class="blog__imgText">2016</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="blog__info">
-                                <p class="blog__text">8 marca obchodzimy Dzień Kobiet. Zapraszamy do naszej zakładki PROMOCJE</p>
-                                <p class="blog__link">czytaj dalej</p>
-                            </div>
-                        </a>
+                                <div class="blog__info">
+                                    <p class="blog__text">8 marca obchodzimy Dzień Kobiet. Zapraszamy do naszej zakładki PROMOCJE</p>
+                                    <p class="blog__link">czytaj dalej</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 blog__item">
-                        <a href="#">
-                            <div class="blog__imgDiv">
-                                <img class="blog__img" src="./images/blog_3.jpg" alt="blog">
-                                <div class="blog__imgInfo">
-                                    <span class="blog__imgText">22.02</span>
-                                    <span class="blog__imgText">2016</span>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="blog__item">
+                            <a href="#">
+                                <div class="blog__imgDiv">
+                                    <img class="blog__img" src="./images/blog_3.jpg" alt="blog">
+                                    <div class="blog__imgInfo">
+                                        <span class="blog__imgText">22.02</span>
+                                        <span class="blog__imgText">2016</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="blog__info">
-                                <p class="blog__text">Przygody dla prawdziwego mężczyzny! 3 nowe, niezapomniane, pełne adrenaliny Przygody!</p>
-                                <p class="blog__link">czytaj dalej</p>
-                            </div>
-                        </a>
+                                <div class="blog__info">
+                                    <p class="blog__text">Przygody dla prawdziwego mężczyzny! 3 nowe, niezapomniane, pełne adrenaliny Przygody!</p>
+                                    <p class="blog__link">czytaj dalej</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 blog__item">
-                        <a href="#">
-                            <div class="blog__imgDiv">
-                                <img class="blog__img" src="./images/blog_4.jpg" alt="blog">
-                                <div class="blog__imgInfo">
-                                    <span class="blog__imgText">30.01</span>
-                                    <span class="blog__imgText">2016</span>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="blog__item">
+                            <a href="#">
+                                <div class="blog__imgDiv">
+                                    <img class="blog__img" src="./images/blog_4.jpg" alt="blog">
+                                    <div class="blog__imgInfo">
+                                        <span class="blog__imgText">30.01</span>
+                                        <span class="blog__imgText">2016</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="blog__info">
-                                <p class="blog__text">Dla wszystkich chcących nabrać sił na zbliżającą się zimę, mamy idealne rozwiązanie- Masaż gorącą czekoladą.</p>
-                                <p class="blog__link">czytaj dalej</p>
-                            </div>
-                        </a>
+                                <div class="blog__info">
+                                    <p class="blog__text">Dla wszystkich chcących nabrać sił na zbliżającą się zimę, mamy idealne rozwiązanie- Masaż gorącą czekoladą.</p>
+                                    <p class="blog__link">czytaj dalej</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -688,7 +712,7 @@
 
         <div class="footer">
             <img class="footer__img" src="./images/footer_background.jpg" alt="footer_background">
-            <div class="container">
+            <div class="container footer__wrapper">
                 <div class="row">
                     <div class="footer__links">
                         <a href="#" class="footer__link">Kontakt</a>
@@ -703,7 +727,7 @@
 
                 <div class="gifts">
                     <div class="row">
-                        <div class="col-md-6 col-lg-3 gifts__column">
+                        <div class="col-sm-6 col-lg-3 gifts__column">
                             <h6 class="gifts__header ">Prezenty na okazję</h6>
                             <a href="#" class="gifts__link">Prezenty na 30 i 40 urodziny</a>
                             <a href="#" class="gifts__link">Prezenty Świąteczne</a>
@@ -716,7 +740,7 @@
                             <a href="#" class="gifts__link">Prezenty na Wieczór Panieński</a>
                             <a href="#" class="gifts__link">Prezenty na 18tkę</a>
                         </div>
-                        <div class="col-md-6 col-lg-3 gifts__column">
+                        <div class="col-sm-6 col-lg-3 gifts__column">
                             <h6 class="gifts__header">Prezenty wg katgorii</h6>
                             <a href="#" class="gifts__link">Prezenty Nowości</a>
                             <a href="#" class="gifts__link">Prezenty w Promocji</a>
@@ -729,7 +753,7 @@
                             <a href="#" class="gifts__link">Prezenty Artystyczne</a>
                             <a href="#" class="gifts__link">Prezenty dla Aktywnych</a>
                         </div>
-                        <div class="col-md-6 col-lg-3 gifts__column">
+                        <div class="col-sm-6 col-lg-3 gifts__column">
                             <h6 class="gifts__header">Prezenty dla niego</h6>
                             <a href="#" class="gifts__link">Wędkarska Przygoda</a>
                             <a href="#" class="gifts__link">Bilard</a>
@@ -742,7 +766,7 @@
                             <a href="#" class="gifts__link">Lot na Motolotni</a>
                             <a href="#" class="gifts__link">dla Mężczyzn</a>
                         </div>
-                        <div class="col-md-6 col-lg-3 gifts__column">
+                        <div class="col-sm-6 col-lg-3 gifts__column">
                             <h6 class="gifts__header">Prezenty dla niej</h6>
                             <a href="#" class="gifts__link">Kurs Sushi</a>
                             <a href="#" class="gifts__link">Kurs Gotowania</a>
@@ -760,52 +784,58 @@
 
                 <div class="contact">
                     <div class="row">
-                        <div class="col-xl-5 contact__column">
-                            <div class="contact__item">
+                        <div class="col-lg-5 contact__column">
+                            <div class="col-md-6 col-lg-5 contact__item">
                                 <h7 class="contact__header">kontakt</h7>
                             </div>
-                            <a href="https://www.google.pl/maps/place/%C5%BBycie+to+Przygoda+Sp.+z+o.o./@52.0601933,20.9802664,17z/data=!3m1!4b1!4m5!3m4!1s0x47192e16a342d675:0x4d81d666999c3e24!8m2!3d52.06019!4d20.982455" target="_blank" class="contact__item">
-                                <img class="contact__icon" src="./images/icon_map.svg" alt="icon_map">
-                                <div>
-                                    <p class="contact__text">Życie to Przygoda sp. z o.o.</p>
-                                    <p class="contact__text">ul.Puławska 32E lok. 100A,</p>
-                                    <p class="contact__text">05-500 Piaseczno</p>
-                                </div>
-                            </a>
+                            <div class="col-md-6 col-lg-7">
+                                <a href="https://www.google.pl/maps/place/%C5%BBycie+to+Przygoda+Sp.+z+o.o./@52.0601933,20.9802664,17z/data=!3m1!4b1!4m5!3m4!1s0x47192e16a342d675:0x4d81d666999c3e24!8m2!3d52.06019!4d20.982455" target="_blank" class="contact__item">
+                                    <img class="contact__icon" src="./images/icon_map.svg" alt="icon_map">
+                                    <div>
+                                        <p class="contact__text">Życie to Przygoda sp. z o.o.</p>
+                                        <p class="contact__text">ul.Puławska 32E lok. 100A,</p>
+                                        <p class="contact__text">05-500 Piaseczno</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-xl-7 contact__column">
-                            <a href="callto:+48221005237" class="contact__item">
-                                <img class="contact__icon" src="./images/icon_phone.svg" alt="icon_phone">
-                                <p class="contact__link">+48 (22) 100 52 37</p>
-                            </a>
-                            <a href="mailto:bok@zycietoprzygoda.pl" class="contact__item">
-                                <img class="contact__icon" src="./images/icon_mail.svg" alt="icon_mail">
-                                <p class="contact__link">bok@zycietoprzygoda.pl</p>
-                            </a>
+                        <div class="col-lg-7 contact__column">
+                            <div class="col-md-6">
+                                <a href="callto:+48221005237" class="contact__item">
+                                    <img class="contact__icon" src="./images/icon_phone.svg" alt="icon_phone">
+                                    <p class="contact__link">+48 (22) 100 52 37</p>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="mailto:bok@zycietoprzygoda.pl" class="contact__item">
+                                    <img class="contact__icon" src="./images/icon_mail.svg" alt="icon_mail">
+                                    <p class="contact__link">bok@zycietoprzygoda.pl</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="note">
                     <div class="row">
-                        <div class="note__icons col-md-6">
+                        <div class="col-md-6 note__column">
                             <a href="#">
-                                <img src="./images/icon_facebook.png" alt="icon_facebook">
+                                <img class="note__icon" src="./images/icon_facebook.png" alt="icon_facebook">
                             </a>
                             <a href="#">
-                                <img src="./images/icon_twitter.png" alt="icon_twitter">
+                                <img class="note__icon" src="./images/icon_twitter.png" alt="icon_twitter">
                             </a>
                             <a href="#">
-                                <img src="./images/icon_pinterest.png" alt="icon_pinterest">
+                                <img class="note__icon" src="./images/icon_pinterest.png" alt="icon_pinterest">
                             </a>
                             <a href="#">
-                                <img src="./images/icon_instagram.png" alt="icon_instagram">
+                                <img class="note__icon" src="./images/icon_instagram.png" alt="icon_instagram">
                             </a>
                             <a href="#">
-                                <img src="./images/icon_bootstrap.png" alt="icon_bootstrap">
+                                <img class="note__icon" src="./images/icon_bootstrap.png" alt="icon_bootstrap">
                             </a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 note__column">
                             <a href="https://www.idosell.com/pl/" target="_blank">
                                 <img src="./images/iai_logo.png" alt="iai">
                             </a>
@@ -821,5 +851,6 @@
         crossorigin="anonymous">
     </script>
     <script src="./js/slider.js"></script>
+    <script src="./js/hover.js"></script>
 </body>
 </html>

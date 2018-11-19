@@ -1,6 +1,6 @@
 @import './variable.scss';
 @import './extends.scss';
-
+@import './mixins.scss';
 
 .section {
     padding: 30px 0;
@@ -9,7 +9,7 @@
         margin: 0 -15px;
     }
     &__title {
-        color: #333333;
+        color: #333;
         font-size: 1.95em;
         font-weight: 700;
         line-height: 17px;
@@ -18,7 +18,8 @@
         margin-bottom: 35px;
     }   
     &__paragraf {
-        color: #333333;
+        font-family: $fontBook;
+        color: #333;
         font-size: 12px;
         line-height: 20px;
         font-weight: 300;
@@ -36,14 +37,14 @@
         position: relative;
     }
     &__text {
-        z-index: 9999;
+        font-family: $fontBlack;
+        z-index: 99;
         position: absolute;
         right: 0;
         bottom: 70px;
         color: #fff;
-        font-size: 2em;
+        font-size: 1.9em;
         font-weight: 400;
-        line-height: 17px;
         text-transform: uppercase;
         letter-spacing: -1.6px;
         background-color: $primaryColor;
@@ -57,7 +58,7 @@
 
 .bestseller {
     &__item {
-        height: 300px;
+        border: 1px solid #dbdbdb;
         margin-bottom: 20px;
         &:hover .bestseller__layer {
             opacity: 1;
@@ -66,8 +67,7 @@
     &__img {
         width: 100%;
         height: 180px;
-        border: 1px solid #dbdbdb;
-        border-bottom: none;
+        
     }
     &__top {
         position: relative;
@@ -88,7 +88,7 @@
         top: 0;
         opacity: 0;
         transition: all ease-in .3s;
-        padding: 20px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -104,12 +104,11 @@
     }
     &__info {
         height: 120px;
-        padding: 15px;
+        padding: 5px;
+        padding-bottom: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 1px solid #dbdbdb;
-        border-top: none;
     }
     &__name, &__place, &__price {
         margin: 0;
@@ -122,10 +121,12 @@
         text-transform: uppercase;
     }
     &__place {
-        color: #666666;
+        color: #666;
         font-size: .875em;
         font-weight: 400;
         line-height: 16px;
+        font-style: italic;
+        font-family: "Gotham - Book Italic";
     }
     &__price {
         color: $primaryColor;
@@ -137,10 +138,10 @@
 
 .blog {
     &__item {
-        height: 270px;
         &:hover .blog__link{
-            color: #000;
+            background-size: 100% 2px;
         }
+        margin-bottom: 20px;
     }
     &__imgDiv {
         position: relative;
@@ -182,14 +183,16 @@
         font-weight: 500;
         line-height: 16px;
         text-transform: uppercase;
-        width: 80%; 
     }
     &__link {
-        color: #e42c35;
+        color: $primaryColor;
         font-size: 13px;
         font-weight: 400;
         line-height: 22px;
         text-transform: uppercase;
+        font-family: $fontBlack;
+        @include underline($primaryColor);
+        width: max-content;
     }
 }
 
@@ -208,6 +211,10 @@
     &__text , &__link {
         font-size: .82em;
     }
+    &__link {
+        @include underline($primaryColor);
+        width: max-content;
+    }
     &__item {
         background-color: #fff;
         height: 180px;
@@ -216,6 +223,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        &:hover .faq__link{
+            background-size: 100% 2px;
+        }
     }
     &__headerWrapper {
         display: inline-flex;
@@ -228,18 +238,21 @@
     }
     &__text {
         color: #333333;
-        line-height: 18px;
-        @extend .firstLetter;
+        line-height: 18px;    
+        @extend %firstLetter;
         &--bold {
             font-size: .9em;
             font-weight: 500;
-            margin: 12px 0;
+            margin: 10px 0;
             display: inline-flex;
         }
         &--center {
             text-align: center;
             margin-bottom: 20px;
         }
+    }
+    &__text, &__text--center {
+        font-family: $fontBook;
     }
     &__wrapper {
         background-color: #fff;

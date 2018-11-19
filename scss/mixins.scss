@@ -1,0 +1,7 @@
+@mixin underline($color) {
+    background-image: linear-gradient(to bottom, $color 0%, $color 100%);
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    background-position: 0 100%;
+    transition: all .5s ease-in-out;
+}

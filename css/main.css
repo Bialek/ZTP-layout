@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
-.firstLetter:first-letter, .faq__text:first-letter {
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
+.faq__text:first-letter {
   text-transform: uppercase;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .section__title {
-  color: #333333;
+  color: #333;
   font-size: 1.95em;
   font-weight: 700;
   line-height: 17px;
@@ -23,7 +23,8 @@
 }
 
 .section__paragraf {
-  color: #333333;
+  font-family: "Gotham Book";
+  color: #333;
   font-size: 12px;
   line-height: 20px;
   font-weight: 300;
@@ -45,14 +46,14 @@
 }
 
 .category__text {
-  z-index: 9999;
+  font-family: "Gotham Black";
+  z-index: 99;
   position: absolute;
   right: 0;
   bottom: 70px;
   color: #fff;
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: 400;
-  line-height: 17px;
   text-transform: uppercase;
   letter-spacing: -1.6px;
   background-color: #e42c35;
@@ -65,7 +66,7 @@
 }
 
 .bestseller__item {
-  height: 300px;
+  border: 1px solid #dbdbdb;
   margin-bottom: 20px;
 }
 
@@ -76,8 +77,6 @@
 .bestseller__img {
   width: 100%;
   height: 180px;
-  border: 1px solid #dbdbdb;
-  border-bottom: none;
 }
 
 .bestseller__top {
@@ -102,7 +101,7 @@
   -webkit-transition: all ease-in .3s;
   -o-transition: all ease-in .3s;
   transition: all ease-in .3s;
-  padding: 20px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,7 +129,8 @@
 
 .bestseller__info {
   height: 120px;
-  padding: 15px;
+  padding: 5px;
+  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,8 +141,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid #dbdbdb;
-  border-top: none;
 }
 
 .bestseller__name, .bestseller__place, .bestseller__price {
@@ -158,10 +156,12 @@
 }
 
 .bestseller__place {
-  color: #666666;
+  color: #666;
   font-size: .875em;
   font-weight: 400;
   line-height: 16px;
+  font-style: italic;
+  font-family: "Gotham - Book Italic";
 }
 
 .bestseller__price {
@@ -172,11 +172,11 @@
 }
 
 .blog__item {
-  height: 270px;
+  margin-bottom: 20px;
 }
 
 .blog__item:hover .blog__link {
-  color: #000;
+  background-size: 100% 2px;
 }
 
 .blog__imgDiv {
@@ -231,7 +231,6 @@
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
-  width: 80%;
 }
 
 .blog__link {
@@ -240,6 +239,20 @@
   font-weight: 400;
   line-height: 22px;
   text-transform: uppercase;
+  font-family: "Gotham Black";
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e42c35), to(#e42c35));
+  background-image: -webkit-linear-gradient(top, #e42c35 0%, #e42c35 100%);
+  background-image: -o-linear-gradient(top, #e42c35 0%, #e42c35 100%);
+  background-image: linear-gradient(to bottom, #e42c35 0%, #e42c35 100%);
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  background-position: 0 100%;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .faq {
@@ -255,11 +268,27 @@
   color: #e42c35;
   line-height: 22px;
   text-transform: uppercase;
-  font-family: "Archivo Black";
+  font-family: "Gotham Black";
 }
 
 .faq__text, .faq__link {
   font-size: .82em;
+}
+
+.faq__link {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e42c35), to(#e42c35));
+  background-image: -webkit-linear-gradient(top, #e42c35 0%, #e42c35 100%);
+  background-image: -o-linear-gradient(top, #e42c35 0%, #e42c35 100%);
+  background-image: linear-gradient(to bottom, #e42c35 0%, #e42c35 100%);
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  background-position: 0 100%;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .faq__item {
@@ -277,6 +306,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.faq__item:hover .faq__link {
+  background-size: 100% 2px;
 }
 
 .faq__headerWrapper {
@@ -303,7 +336,7 @@
 .faq__text--bold {
   font-size: .9em;
   font-weight: 500;
-  margin: 12px 0;
+  margin: 10px 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -312,6 +345,10 @@
 .faq__text--center {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.faq__text, .faq__text--center {
+  font-family: "Gotham Book";
 }
 
 .faq__wrapper {

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
 .header {
   position: relative;
   height: 100vh;
@@ -22,7 +23,7 @@
   opacity: 1;
 }
 
-.header .TopBar {
+.header .topBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,27 +31,34 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.header .TopBar__list {
+.header .topBar__list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .TopBar__item {
+.header .topBar__list--right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.header .topBar__item {
   margin-right: 35px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.header .TopBar__item:last-child {
+.header .topBar__item:last-child {
   margin: 0;
 }
 
-.header .TopBar__link {
+.header .topBar__link {
   color: #fff;
   font-size: 0.8em;
   font-weight: 700;
@@ -61,56 +69,56 @@
   transition: all .2s ease-in-out;
 }
 
-.header .TopBar__link:hover {
+.header .topBar__link:hover {
   color: #e42c35;
 }
 
-.header .TopBar__icon {
+.header .topBar__icon {
   color: #e42c35;
   margin-right: 5px;
 }
 
-.header .TopBar__icon--search {
+.header .topBar__icon--search {
   margin: 0;
   font-size: 1.2em;
 }
 
-.header .TopBar__form {
+.header .topBar__form {
   position: relative;
 }
 
-.header .TopBar__input {
+.header .topBar__input {
   width: 188px;
   height: 33px;
   background-color: #fff;
   padding: 12px 30px 12px 12px;
 }
 
-.header .TopBar__input::-webkit-input-placeholder {
+.header .topBar__input::-webkit-input-placeholder {
   color: #333333;
   font-size: 12px;
   font-weight: 700;
 }
 
-.header .TopBar__input:-ms-input-placeholder {
+.header .topBar__input:-ms-input-placeholder {
   color: #333333;
   font-size: 12px;
   font-weight: 700;
 }
 
-.header .TopBar__input::-ms-input-placeholder {
+.header .topBar__input::-ms-input-placeholder {
   color: #333333;
   font-size: 12px;
   font-weight: 700;
 }
 
-.header .TopBar__input::placeholder {
+.header .topBar__input::placeholder {
   color: #333333;
   font-size: 12px;
   font-weight: 700;
 }
 
-.header .TopBar__search {
+.header .topBar__search {
   position: absolute;
   vertical-align: sub;
   margin-top: 3px;
@@ -151,15 +159,16 @@
 }
 
 .header .logo__text {
+  font-family: "Roboto";
   font-size: 1em;
-  font-weight: 400;
-  line-height: 17px;
+  font-weight: 300;
   text-transform: uppercase;
   margin: 0;
 }
 
 .header .logo__text:first-child {
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 1.1em;
 }
 
 .header .desktopMenu {
@@ -186,6 +195,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: -15px;
+  font-family: "Gotham Black";
 }
 
 .header .desktopMenu .PrimaryMenu__list {
@@ -272,6 +282,39 @@
   top: 55px;
 }
 
+@media screen and (max-width: 768px) {
+  .header .topBar, .header .logo, .header .desktopMenu {
+    display: none;
+  }
+}
+
+.header body__menuOpen {
+  overflow: hidden;
+}
+
+.header body__menuOpen:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .header body:before {
+    content: "";
+    position: absolute;
+    background-color: #e42c35;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
 .header .jumbotron {
   padding-top: 70px;
   display: -webkit-box;
@@ -287,7 +330,7 @@
 }
 
 .header .jumbotron__slogan {
-  color: #ffffff;
+  color: #fff;
   font-size: 54px;
   font-weight: 700;
   line-height: 50px;
@@ -311,16 +354,26 @@
   padding: 15px;
   width: 700px;
   margin-bottom: 25px;
+  opacity: .9;
+}
+
+@media screen and (max-width: 768px) {
+  .header .jumbotron__selectors {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
 }
 
 .header .jumbotron__selector {
+  font-family: "Gotham Book";
   background-color: #fff;
-  color: #333333;
+  color: #333;
   font-size: .85em;
   font-weight: 400;
   line-height: 17px;
   padding: 15px;
-  margin-right: 1px;
+  margin: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,6 +386,7 @@
 
 .header .jumbotron__selector:hover .dropdown {
   display: block;
+  left: -1px;
 }
 
 .header .jumbotron__icon {

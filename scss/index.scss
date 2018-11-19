@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+@import './variable.scss';
 
 * {
     padding: 0;
     outline: none;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: $primaryfont;
 }
 
 body {

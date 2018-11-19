@@ -48,8 +48,8 @@
   color: #e42c35;
 }
 
-.btn__primary--long, .btn__primary--center {
-  font-family: "Archivo Black";
+.btn__primary--long, .btn__primary--center, .btn__primary--reverse {
+  font-family: "Gotham Black";
 }
 
 .btn__primary--long {

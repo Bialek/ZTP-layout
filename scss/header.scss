@@ -18,14 +18,19 @@
             opacity: 1;
         }
     }
-
-    .TopBar {
+  
+    .topBar {
         display: flex;
         justify-content: space-between;
         z-index: 1;
+        flex-wrap: wrap;
         &__list {
             list-style: none;
             display: flex;
+            &--right {
+                margin-right: 0;
+                margin-left: auto;
+            }
         }
         &__item {
             margin-right: 35px;
@@ -101,13 +106,14 @@
             }
         }
         &__text {
+            font-family: $fontLogo;
             font-size: 1em;
-            font-weight: 400;
-            line-height: 17px;
+            font-weight: 300;
             text-transform: uppercase;
             margin: 0;
             &:first-child {
-                font-weight: 700;
+                font-weight: 900;
+                font-size: 1.1em;
             }
         }
 
@@ -122,6 +128,7 @@
             display: flex;
             justify-content: flex-end;
             margin-right: -15px;
+            font-family: $fontBlack;
             &__list {
                 list-style: none;
                 display: inline-flex;
@@ -195,14 +202,45 @@
             top: 55px;
         }
     }
+    // mobile menu styles
+    .topBar, .logo, .desktopMenu {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    body {
+        &__menuOpen {
+            overflow: hidden;
+            &:before{
+            visibility: visible;
+            opacity: 1;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            &:before {
+                content: "";
+                position: absolute;
+                background-color: $primaryColor;
+                width: 100%;
+                overflow: hidden;
+                top:0;
+                left:0;
+                bottom: 0;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+    }
 
+    
     .jumbotron {
         padding-top: 70px;
         display: flex;
         flex-direction: column;
         align-items: center;
         &__slogan {
-            color: #ffffff;
+            color: #fff;
             font-size: 54px;
             font-weight: 700;
             line-height: 50px;
@@ -220,21 +258,28 @@
             padding: 15px;
             width: 700px;
             margin-bottom: 25px;
+            opacity: .9;
+            @media screen and (max-width: 768px) {
+                flex-wrap: wrap;
+                width: 100%;
+            }
         }
         &__selector {
+            font-family: $fontBook;
             background-color: #fff;
-            color: #333333;
+            color: #333;
             font-size: .85em;
             font-weight: 400;
             line-height: 17px;
             padding: 15px;
-            margin-right: 1px;
+            margin: 1px;
             display: flex;
             justify-content: space-between;
             position: relative;
             width: 100%;
             &:hover .dropdown {
                 display: block;
+                left: -1px;
             }
         }
         &__icon {
