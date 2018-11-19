@@ -20,213 +20,218 @@
 </head>
 <body>
     <header class="header">
-        <!-- slider start  -->
-        <img class="header__background header__background--active" src="./images/background.jpg" alt="ZTP background">
-        <img class="header__background" src="./images/background1.jpg" alt="ZTP background">
-        <button class="btn__arrow btn_arrow--left" value="-1">
-            <i class="fa fa-angle-left btn__icon--angle" aria-hidden="true"></i>
-        </button>
-        
-        <button class="btn__arrow btn__arrow--right" value="1">
-            <i class="fa fa-angle-right btn__icon--angle" aria-hidden="true"></i>
-        </button>
-        <!-- slider end -->
-        <div class="topBar">
-            <ul class="topBar__list">
-                <li class="topBar__item"><a href="#" class="topBar__link">gdzie kupić</a></li>
-                <li class="topBar__item"><a href="#" class="topBar__link">prezent</a></li>
-                <li class="topBar__item"><a href="#" class="topBar__link">jak to działa </a></li>
-                <li class="topBar__item"><a href="#" class="topBar__link">dla firm</a></li>
-                <li class="topBar__item"><a href="#" class="topBar__link">dostawa</a></li>
-                <li class="topBar__item"><a href="#" class="topBar__link">płatność</a></li>
-                <li class="topBar__item"><a href="#" class="topBar__link">kontakt</a></li>
-            </ul>
-                
-            <ul class="topBar__list topBar__list--right">
-                 <li class="topBar__item">
-                    <a href="#" class="topBar__link">
-                        Ulubione (
-                            <span id="favorite_number">0</span>
-                        )
-                    </a>
-                </li>
-                 <li class="topBar__item">   
-                    <a href="#" class="topBar__link">
-                        <div>
-                            <i class="fa fa-user topBar__icon" aria-hidden="true"></i>
-                            twoje konto
-                        </div>
-                    </a>          
-                </li>
-                <li class="topBar__item">
-                    <a href="#" class="topBar__link">
-                        <div>
-                            <i class="fa fa-shopping-cart topBar__icon" aria-hidden="true"></i>
-                            2 szt. za 254,00 zł
-                        </div>
-                    </a>
-                </li>
-                <li class="topBar__item">
-                    <form class="topBar__form" action="#" method="post">
-                        <input placeholder="Szukaj..." type="text" class="topBar__input">
-                        <button type="submit" class="topBar__search">
-                            <i class="fa fa-search topBar__icon topBar__icon--search" aria-hidden="true"></i>
-                        </button>  
-                    </form>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="logo">
-            <a href="/">
-                <img src="./images/logo.png" alt="logo1">
-            </a>
-            <div class="logo__slogan">
-                <p class="logo__text">podaruj ją komuś</p>
-                <p class="logo__text">lub przeżyj to sam!</p>
+        <div class="mobileMenu">
+            <div class="mobileMenu__topBar">
+                <img class="mobileMenu__logo" src="./images/logo.png" alt="logo">
+                <button class="mobileMenu__burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
-
-        <div class="desktopMenu">
-            <nav class="PrimaryMenu">
-                <ul class="PrimaryMenu__list">
-                    <li class="PrimaryMenu__item">
-                        <a href="#" class="PrimaryMenu__link">
-                            prezenty
-                            <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
-                            <ul class="dropdown dropdown--primary">
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                            </ul>
+        
+       <nav class="nav">
+            <div class="topBar">
+                <ul class="topBar__list">
+                    <li class="topBar__item"><a href="#" class="topBar__link">gdzie kupić</a></li>
+                    <li class="topBar__item"><a href="#" class="topBar__link">prezent</a></li>
+                    <li class="topBar__item"><a href="#" class="topBar__link">jak to działa </a></li>
+                    <li class="topBar__item"><a href="#" class="topBar__link">dla firm</a></li>
+                    <li class="topBar__item"><a href="#" class="topBar__link">dostawa</a></li>
+                    <li class="topBar__item"><a href="#" class="topBar__link">płatność</a></li>
+                    <li class="topBar__item"><a href="#" class="topBar__link">kontakt</a></li>
+                </ul>
+                    
+                <ul class="topBar__list topBar__list--right">
+                    <li class="topBar__item">
+                        <a href="#" class="topBar__link">
+                            Ulubione (
+                                <span id="favorite_number">0</span>
+                            )
                         </a>
                     </li>
-                    <li class="PrimaryMenu__item">
-                        <a href="#" class="PrimaryMenu__link">
-                                dla kogo? 
-                            <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
-                            <ul class="dropdown dropdown--primary">
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                            </ul>
+                    <li class="topBar__item">   
+                        <a href="#" class="topBar__link">
+                            <div>
+                                <i class="fa fa-user topBar__icon" aria-hidden="true"></i>
+                                twoje konto
+                            </div>
+                        </a>          
+                    </li>
+                    <li class="topBar__item">
+                        <a href="#" class="topBar__link">
+                            <div>
+                                <i class="fa fa-shopping-cart topBar__icon" aria-hidden="true"></i>
+                                2 szt. za 254,00 zł
+                            </div>
                         </a>
                     </li>
-                    <li class="PrimaryMenu__item">
-                        <a href="#" class="PrimaryMenu__link">
-                            miasto
-                            <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
-                            <ul class="dropdown dropdown--primary">
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li class="PrimaryMenu__item">
-                        <a href="#" class="PrimaryMenu__link">
-                            okazja
-                            <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
-                            <ul class="dropdown dropdown--primary">
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li class="PrimaryMenu__item">
-                        <a href="#" class="PrimaryMenu__link">
-                            promocje
-                            <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
-                            <ul class="dropdown dropdown--primary">
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                                <li class="PrimaryMenu__item">
-                                    <a href="#" class="PrimaryMenu__link">prezenty</a>
-                                </li>
-                            </ul>
-                        </a>
+                    <li class="topBar__item">
+                        <form class="topBar__form" action="#" method="post">
+                            <input placeholder="Szukaj..." type="text" class="topBar__input">
+                            <button type="submit" class="topBar__search">
+                                <i class="fa fa-search topBar__icon topBar__icon--search" aria-hidden="true"></i>
+                            </button>  
+                        </form>
                     </li>
                 </ul>
-            </nav>
+            </div>
+            
+            <div class="logo">
+                <a href="/">
+                    <img src="./images/logo.png" alt="logo1">
+                </a>
+                <div class="logo__slogan">
+                    <p class="logo__text">podaruj ją komuś</p>
+                    <p class="logo__text">lub przeżyj to sam!</p>
+                </div>
+            </div>
 
-            <nav class="SecondaryMenu">
-                <ul class="SecondaryMenu__list">
-                    <li class="SecondaryMenu__item">
-                        <a href="#" class="SecondaryMenu__link">PREZENTY NA ŚWIĘTA</a>
-                    </li>
-                    <li class="SecondaryMenu__item">
-                        <a href="#" class="SecondaryMenu__link">NOWOŚCI</a>
-                    </li>
-                    <li class="SecondaryMenu__item">
-                            <a href="#" class="SecondaryMenu__link">KARTY PODARUNKOWE</a>
+            <div class="menu">
+                <nav class="PrimaryMenu">
+                    <ul class="PrimaryMenu__list">
+                        <li class="PrimaryMenu__item">
+                            <div class="PrimaryMenu__link">
+                                prezenty
+                                <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
+                                <ul class="dropdown dropdown--primary dropdown--mobile">
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                </ul>
+                            <div>
                         </li>
-                    <li class="SecondaryMenu__item">
-                        <a href="#" class="SecondaryMenu__link">PAKIETY PREZENTOWE</a>
-                    </li>
-                    <li class="SecondaryMenu__item">
-                        <a href="#" class="SecondaryMenu__link">DLA FIRM</a>
-                    </li>
-                    <li class="SecondaryMenu__item">
-                        <a href="#" class="SecondaryMenu__link">blog</a>
-                    </li>
-                </ul>
-            </nav>
+                        <li class="PrimaryMenu__item">
+                            <div class="PrimaryMenu__link">
+                                    dla kogo? 
+                                <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
+                                <ul class="dropdown dropdown--primary dropdown--mobile">
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="PrimaryMenu__item">
+                            <div class="PrimaryMenu__link">
+                                miasto
+                                <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
+                                <ul class="dropdown dropdown--primary dropdown--mobile">
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="PrimaryMenu__item">
+                            <div class="PrimaryMenu__link">
+                                okazja
+                                <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
+                                <ul class="dropdown dropdown--primary dropdown--mobile">
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="PrimaryMenu__item">
+                            <div class="PrimaryMenu__link">
+                                promocje
+                                <i class="fa fa-angle-down PrimaryMenu__icon" aria-hidden="true"></i>
+                                <ul class="dropdown dropdown--primary dropdown--mobile">
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                    <li class="PrimaryMenu__item">
+                                        <a href="#" class="PrimaryMenu__link">prezenty</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
 
-            <a href="#" class="btn__primary">
-                <i class="fa fa-tags btn__icon" aria-hidden="true"></i>
-                bilet do przygody
-            </a>
-        </div>
+                <nav class="SecondaryMenu">
+                    <ul class="SecondaryMenu__list">
+                        <li class="SecondaryMenu__item">
+                            <a href="#" class="SecondaryMenu__link">PREZENTY NA ŚWIĘTA</a>
+                        </li>
+                        <li class="SecondaryMenu__item">
+                            <a href="#" class="SecondaryMenu__link">NOWOŚCI</a>
+                        </li>
+                        <li class="SecondaryMenu__item">
+                                <a href="#" class="SecondaryMenu__link">KARTY PODARUNKOWE</a>
+                            </li>
+                        <li class="SecondaryMenu__item">
+                            <a href="#" class="SecondaryMenu__link">PAKIETY PREZENTOWE</a>
+                        </li>
+                        <li class="SecondaryMenu__item">
+                            <a href="#" class="SecondaryMenu__link">DLA FIRM</a>
+                        </li>
+                        <li class="SecondaryMenu__item">
+                            <a href="#" class="SecondaryMenu__link">blog</a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <div class="mobileTopBar">
-            <span id="mobileOpen">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </span>
-        </div>
+                <a href="#" class="btn__primary">
+                    <i class="fa fa-tags btn__icon" aria-hidden="true"></i>
+                    bilet do przygody
+                </a>
+            </div>
+        </nav>
+         <!-- slider start  -->
+         <img class="header__background header__background--active" src="./images/background.jpg" alt="ZTP background">
+         <img class="header__background" src="./images/background1.jpg" alt="ZTP background">
+         <button class="btn__arrow btn_arrow--left" value="-1">
+             <i class="fa fa-angle-left btn__icon--angle" aria-hidden="true"></i>
+         </button>
+         
+         <button class="btn__arrow btn__arrow--right" value="1">
+             <i class="fa fa-angle-right btn__icon--angle" aria-hidden="true"></i>
+         </button>
+         <!-- slider end -->
 
         <div class="jumbotron col-md-12">
             <p class="jumbotron__slogan">znajdź</p>
@@ -852,5 +857,6 @@
     </script>
     <script src="./js/slider.js"></script>
     <script src="./js/hover.js"></script>
+    <script src="./js/mobileMenu.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     background: transparent;
     border: none;
     margin: auto;
-    z-index: 100;
+    z-index: 50;
     cursor: pointer;
     &:hover {
         opacity: .8;
@@ -17,11 +17,13 @@
     &--left {
         left: 0;
     }
+    @media screen and (max-width: 768px) {
+        top: 80%;
+    }
 }
 .btn {
     &__primary {
         display: block;
-        margin-right: -15px;
         width: max-content;
         padding: 12px 6px;
         background-color: $primaryColor;
@@ -62,6 +64,16 @@
             padding: 0 27px;
             margin-bottom: 20px;
         }
+    }
+    &__mobileMenu {
+        margin: 10px;
+        border-radius: 50%;
+        border: 2px solid $primaryColor;
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        color: $primaryColor;
+        font-size: 1em;
     }
     &__icon {
         margin: 0 5px;

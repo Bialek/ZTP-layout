@@ -101,7 +101,7 @@
         &:after {
             position: absolute;
             content: "";
-            top: 20%;
+            top: 20%; 
             right: -23px;
             height: 60%;
             width: 2px;
@@ -116,9 +116,9 @@
                 left: 20px;
             }
             &:last-child::after {
-                display: block;
+                display: block; 
             }
-        }
+        } 
     }
 }
 

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
 .btn__arrow {
   position: absolute;
   top: 50%;
   background: transparent;
   border: none;
   margin: auto;
-  z-index: 100;
+  z-index: 50;
   cursor: pointer;
 }
 
@@ -21,9 +21,14 @@
   left: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .btn__arrow {
+    top: 80%;
+  }
+}
+
 .btn__primary {
   display: block;
-  margin-right: -15px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -73,6 +78,17 @@
   height: 40px;
   padding: 0 27px;
   margin-bottom: 20px;
+}
+
+.btn__mobileMenu {
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid #e42c35;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  color: #e42c35;
+  font-size: 1em;
 }
 
 .btn__icon {

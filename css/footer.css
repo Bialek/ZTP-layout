@@ -13,6 +13,13 @@
   background-color: #3b3b3b;
 }
 
+@media screen and (max-width: 1280px) {
+  .footer__links:after, .gifts:after, .contact:after {
+    width: 100%;
+    left: 0;
+  }
+}
+
 .newsletter {
   background-color: #e42c35;
   margin: 0 -15px;
