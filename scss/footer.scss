@@ -19,7 +19,7 @@
         z-index: 3;
     }
     &__header {
-        color: #ffffff;
+        color: #fff;
         font-size: 1.1em;
         font-weight: 700;
         text-transform: uppercase;
@@ -130,7 +130,7 @@
     &__header {
         color: $primaryColor;
         font-family: Gotham;
-        font-size: 17px;
+        font-size: 1.07em;
         font-weight: 700;
         text-transform: uppercase;
         width: 90%;
@@ -166,7 +166,7 @@
     &__header {
         color: $primaryColor;
         font-family: Gotham;
-        font-size: 1.06em;
+        font-size: 1.07em;
         font-weight: 700;
         text-transform: uppercase;
         @media screen and (max-width: 992px) {
@@ -228,7 +228,7 @@
     &__link {
         color: inherit;
         font-family: Gotham;
-        font-size: 15px;
+        font-size: .94em;
         font-weight: 700;
         padding: 20px 90px 27px 0;
         @media screen and (max-width: 1200px) {

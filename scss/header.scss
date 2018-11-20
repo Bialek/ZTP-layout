@@ -23,6 +23,7 @@
         @media screen and (max-width: 768px) {
             display: none;
         }
+        
         &__active {
             position: absolute;
             background-color: $primaryColor;
@@ -35,21 +36,23 @@
             flex-direction: column;
         }
         .topBar {
-            display: flex;
             justify-content: space-between;
             z-index: 1;
             flex-wrap: wrap;
             margin: 0 15px;
             @media screen and (max-width: 768px) {
-                flex-direction: column;
                 background-color: #fff;
                 margin: 0 5px;
             }
-            &__list {
-                list-style: none;
+            &, &__list {
                 display: flex;
                 @media screen and (max-width: 768px) {
                     flex-direction: column;
+                }  
+            }
+            &__list {
+                list-style: none;
+                @media screen and (max-width: 768px) {
                     order: 2;
                     border-bottom: 2px solid $primaryColor;
                 }
@@ -105,9 +108,12 @@
                 background-color: #fff;
                 padding: 12px 30px 12px 12px;
                 &::placeholder {
-                    color: #333333;
-                    font-size: 12px;
+                    color: #333;
+                    font-size: .81em;
                     font-weight: 700;
+                }
+                @media screen and (max-width: 768px) {
+                    border: 1px solid $primaryColor;
                 }
             }
             &__search {
@@ -239,9 +245,9 @@
                     }
                 }
                 &__item {
-                    padding: 15px 10px;
+                    padding: 15px 15px;
                     transition: all ease-in-out .3s;
-                    color: #333333;
+                    color: #333;
                     &:hover {
                         background-color: $primaryColor;
                         color: #fff;
@@ -250,7 +256,7 @@
                 &__link {
                     color: inherit;
                     font-family: Montserrat;
-                    font-size: 13px;
+                    font-size: .82em;
                     font-weight: 400;
                     line-height: 9.5px;
                     text-transform: uppercase;
@@ -285,9 +291,11 @@
     
     .jumbotron {
         padding-top: 70px;
-        display: flex;
         flex-direction: column;
         align-items: center;
+        &, &__selectors, &__selector {
+            display: flex;
+        }
         &__slogan {
             color: #fff;
             font-size: 3.3em;
@@ -305,7 +313,6 @@
             }
         }
         &__selectors {
-            display: flex;
             justify-content: space-between;
             background-color: $primaryColor;
             padding: 15px;
@@ -326,7 +333,6 @@
             line-height: 17px;
             padding: 15px;
             margin: 1px;
-            display: flex;
             justify-content: space-between;
             position: relative;
             width: 100%;
@@ -339,7 +345,7 @@
             color: $primaryColor;
             font-size: 1.3em;
         }
-    }
+    } 
 }
 
 .mobileMenu {

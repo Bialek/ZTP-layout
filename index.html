@@ -4,17 +4,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ztp layout">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Rafał Białek">
     <title>ZTP Layout</title>
     <!-- vendors links -->
     <script src="https://use.fontawesome.com/72c8a0c2fa.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap-grid.css" />
     <!-- website links -->
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/buttons.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/grid.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/header.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/footer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.min.css" />
 
     
 </head>
@@ -107,7 +105,7 @@
                                         <a href="#" class="PrimaryMenu__link">prezenty</a>
                                     </li>
                                 </ul>
-                            <div>
+                            </div>
                         </li>
                         <li class="PrimaryMenu__item">
                             <div class="PrimaryMenu__link">
@@ -237,7 +235,7 @@
             <p class="jumbotron__slogan">znajdź</p>
             <p class="jumbotron__slogan">najlepszy prezent</p>
             <div class="jumbotron__selectors">
-                <div class="jumbotron__selector col-md-4">
+                <div class="jumbotron__selector">
                     dla kogo?
                     <i class="fa fa-angle-down jumbotron__icon" aria-hidden="true"></i>
                     <ul class="dropdown">
@@ -255,7 +253,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="jumbotron__selector col-md-4">
+                <div class="jumbotron__selector">
                     W jakim mieście?
                     <i class="fa fa-angle-down jumbotron__icon" aria-hidden="true"></i>
                     <ul class="dropdown">
@@ -273,7 +271,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="jumbotron__selector col-md-4">
+                <div class="jumbotron__selector">
                     W jakiej cenie?
                     <i class="fa fa-angle-down jumbotron__icon" aria-hidden="true"></i>
                     <ul class="dropdown">
@@ -303,33 +301,33 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 category">
-                        <a href="#" class="category__link">
+                        <a href="#" id="1" class="category__link">
                             <img class="category__img" src="./images/category_1.jpg" alt="him">
                             <span class="category__text">Dla niego</span>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 category">
-                        <a href="#" class="category__link">
+                        <a href="#" id="2" class="category__link">
                             <img class="category__img" src="./images/category_2.jpg" alt="her">
                             <span class="category__text">Dla niej</span>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 category">
-                        <a href="#" class="category__link">
+                        <a href="#" id="3" class="category__link">
                             <img class="category__img" src="./images/category_3.jpg" alt="kids">
                             <span class="category__text">Dla dzieci</span>
                         </a>
-                        <a href="#" class="category__link">
+                        <a href="#" id="4" class="category__link">
                             <img class="category__img" src="./images/category_4.jpg" alt="beauty">
                             <span class="category__text">uroda i styl</span>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 category">
-                        <a href="#" class="category__link">
+                        <a href="#" id="5" class="category__link">
                             <img class="category__img" src="./images/category_5.jpg" alt="hobby">
                             <span class="category__text">hobby</span>
                         </a>
-                        <a href="#" class="category__link">
+                        <a href="#" id="6" class="category__link">
                             <img class="category__img" src="./images/category_6.jpg" alt="adrenalin">
                             <span class="category__text">adrenalina</span>
                         </a>
@@ -791,7 +789,7 @@
                     <div class="row">
                         <div class="col-lg-5 contact__column">
                             <div class="col-md-6 col-lg-5 contact__item">
-                                <h7 class="contact__header">kontakt</h7>
+                                <h6 class="contact__header">kontakt</h6>
                             </div>
                             <div class="col-md-6 col-lg-7">
                                 <a href="https://www.google.pl/maps/place/%C5%BBycie+to+Przygoda+Sp.+z+o.o./@52.0601933,20.9802664,17z/data=!3m1!4b1!4m5!3m4!1s0x47192e16a342d675:0x4d81d666999c3e24!8m2!3d52.06019!4d20.982455" target="_blank" class="contact__item">
@@ -855,8 +853,8 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
     </script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/hover.js"></script>
-    <script src="./js/mobileMenu.js"></script>
+    <script src="./js/slider.min.js"></script>
+    <script src="./js/hover.min.js"></script>
+    <script src="./js/mobileMenu.min.js"></script>
 </body>
 </html>

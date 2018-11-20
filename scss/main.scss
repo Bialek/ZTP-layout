@@ -19,7 +19,7 @@
     &__paragraf {
         font-family: $fontBook;
         color: #333;
-        font-size: 12px;
+        font-size: .75em;
         line-height: 20px;
         font-weight: 300;
         text-align: justify;
@@ -34,6 +34,9 @@
     display: grid;
     &__link {
         position: relative;
+        &:hover .category__text {
+            background-size: 100% 5px;
+        }
     }
     &__text {
         font-family: $fontBlack;
@@ -48,6 +51,9 @@
         letter-spacing: -1.6px;
         background-color: $primaryColor;
         padding: 17px 35px 17px 20px;
+        @include underline(#fff);
+        background-size: 0 5px;
+        
     }
     &__img {
         width: 100%;
@@ -71,6 +77,11 @@
     &__top {
         position: relative;
     }
+    &__layer, &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     &__layer {
         color: #fff;
         font-size: .8em;
@@ -88,9 +99,6 @@
         opacity: 0;
         transition: all ease-in .3s;
         padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
     &__icons {
         padding-top: 10px;
@@ -105,9 +113,6 @@
         height: 120px;
         padding: 5px;
         padding-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
     &__name, &__place, &__price {
         margin: 0;
@@ -177,7 +182,7 @@
         padding: 15px;
     }
     &__text {
-        color: #333333;
+        color: #333;
         font-size: .95em;
         font-weight: 500;
         line-height: 16px;
@@ -185,7 +190,7 @@
     }
     &__link {
         color: $primaryColor;
-        font-size: 13px;
+        font-size: .82em;
         font-weight: 400;
         line-height: 22px;
         text-transform: uppercase;
